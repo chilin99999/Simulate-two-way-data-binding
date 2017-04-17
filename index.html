@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Simulate two-way data-binding</title>
+</head>
+<body>
+  <p bind="myData">Haha, it's the original data.</p>
+  <input model="myData" type="text" />
+
+  <script src="two-way-binding.js"></script>
+  <script>
+    window.proxy['myData'] = "It is changed!! o___o";
+  </script>
+</body>
+</html>
